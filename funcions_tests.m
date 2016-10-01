@@ -81,6 +81,6 @@ for i=2:numiter %i= numero d'iteracions -> ¡CANVIAR PER WHILE!
             N(i,ind)= N(i,nova_pos(ind)) + normrnd(mu,sigma);
             ind= ind + 1;
         end
-        %kasdjfa
+        
 end
 
