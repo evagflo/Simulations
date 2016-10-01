@@ -76,7 +76,7 @@ for i=2:numiter %i= numero d'iteracions -> ¡CANVIAR PER WHILE!
     % half index-> aqui hi ha un problema
         while (ind <= half_index(i))
             number(i,ind)= rand(1);% 
-            pos(i,ind)= find(number(i,ind)<fitness_cumsum(i,:),1,'first')-1;
+            pos(i,ind)= find(number(i,ind)<fitness_cumsum(i,:),1,'first');
             nova_pos(ind)= pos(i,ind); 
             N(i,ind)= N(i,nova_pos(ind)) + normrnd(mu,sigma);
             ind= ind + 1;
